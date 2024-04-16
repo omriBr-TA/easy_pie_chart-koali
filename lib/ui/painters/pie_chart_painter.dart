@@ -39,7 +39,7 @@ class _PieChartPainter extends CustomPainter {
     startAngle *= pi / 180;
 
     ///looping through pie values to draw arcs
-    for (int i = 0; i < pieValues.length; i++) {
+    for (int i = pieValues.length; i > 0; i--) {
       /// If [animateFromEnd] is set to true, the pie will animate counterclockwise
       /// for the specified index, starting from the last index and decreasing sequentially.
       final int index = animateFromEnd ? pieValues.length - i - 1 : i;
