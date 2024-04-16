@@ -42,7 +42,7 @@ class _PieChartPainter extends CustomPainter {
     for (int i = pieValues.length; i > 0; i--) {
       /// If [animateFromEnd] is set to true, the pie will animate counterclockwise
       /// for the specified index, starting from the last index and decreasing sequentially.
-      final int index = animateFromEnd ? pieValues.length - i - 1 : i;
+      final int index = animateFromEnd ? pieValues.length - i : i;
 
       /// Obtaining the precise fraction of the current pieValues relative to the total sum of pieValues,
       /// and converting it into radians. A value of -1 indicates that
